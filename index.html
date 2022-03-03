@@ -1,55 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Leo Wilson - Portfolio</title>
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/glightbox.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <title>Leo Wilson - My Portfolio</title>
   </head>
-
   <body>
-    <!-- Start of Main Header with Text and Logo-->
+
+    <!-- Start of  Header -->
     <header class="header-box">
       <section class="header-image-box">
-          <video class="video" src="./assets/img/header.mp4" autoplay muted loop of code being written></video>
+        <video class="header-video" src="video/header.mp4" autoplay muted loop></video>
       </section>
       <section class="header-text-box">
-        <h1 class="header-name">Leo Wilson</h1>
-        <section class="headshot-box">
-        <p class="header-text">A 22 year old Systems Administrator from York, England.</p>
-      </section>
-        <img class="headshot" src="./assets/img/headshot.jpg" alt="A picture of me">
+        <h1 class="header-heading">leo wilson</h1>
+        <p class="header-text"> A 23 year old Systems Administrator from York, England. </p>
+        <img class="headshot" src="./img/headshot.jpg" alt="A picture of me">
+        <p>
+          <a href="#projects"><button type="button" class="header-button">View Portfolio</button></a>
+          <a href="#contact-form"><button type="button" class="header-button">Contact</button></a>
+          <a href="https://au.linkedin.com/in/leo-wilson-23295b137"><button type="button" class="header-button">View LinkedIn</button></a>
+          <a href="https://github.com/LeoWilson99"><button type="button" class="header-button">View GitHub</button></a>
+        </p>
       </section>
     </header>
-      <!-- End of Main Header with Text and Logo-->
-
-      <!-- Start of Main portfolio-->
-      <main>
-        <section class="portfolio-text-box">
-      <p class="portfolio-title-text">My Portfolio</h1>
+    <!--end of footer section, below is current projects-->
+    <main>
+      <div id="projects">
+      <section class = "title">
+      <p class="header-text">My Projects</p>
+    </section>
+    <section class="table">
+      <div class="grid-container">
+        <div><img class ="grid-item" src="./img/Icon-Placeholder.png" alt=""></div>
+        <div><img class ="grid-item" src="./img/Icon-Placeholder.png" alt=""></div>
+        <div><img class ="grid-item" src="./img/Icon-Placeholder.png" alt=""></div>
+        <div><img class ="grid-item" src="./img/Icon-Placeholder.png" alt=""></div>
+        <div><img class ="grid-item" src="./img/Icon-Placeholder.png" alt=""></div>
+        <div><img class ="grid-item" src="./img/Icon-Placeholder.png" alt=""></div>   
+      </div>
+    </div>
+    <div id="contact-form">
+      <section class="title">
+      <p class="header-text">Contact Me</p>
       </section>
-      <!-- taken from W3 Schools and modified-->
-        <section class="project-grid">
-          <div class="grid-container">
-            <div class="grid-item"><img class="logos" src="https://img.icons8.com/color/96/000000/time.png"/></div>
-            <div class="grid-item">2</div>
-            <div class="grid-item">3</div>
-            <div class="grid-item">4</div>
-            <div class="grid-item">5</div>
-            <div class="grid-item">6</div>
-            <div class="grid-item">7</div>
-            <div class="grid-item">8</div>
-            <div class="grid-item">9</div>
-          </div>
-        </section>
-     <!-- End Portfolio-->
-
-    <!-- Begin About -->
-    <section class="portfolio-text-box">
-      <p class="portfolio-title-text">My Contact Details</h1>
-      </section>
-      </main>
-      <!-- end of Main portfolio-->
+      <section class="contact-form">
+      <div class="contact-container">
+        <form action="action_page.php">
+          <label for="fname" class="header-text" class="contact-form-text">First Name</label>
+          <input type="text" id="fname" name="firstname" class="header-text" placeholder="Your name..">
+      
+          <label for="lname" class="header-text">Last Name</label>
+          <input type="text" id="lname" name="lastname" class="header-text" placeholder="Your last name..">
+      
+          <label for="subject" class="header-text">Subject</label>
+          <textarea id="subject" name="subject" class="header-text" placeholder="Write something.." style="height:200px"></textarea>
+          <a type="submit" href=""><button type="button" class="header-button">Submit</button></a>
+        </form>
+      </div>
+    </div>
+    <section class="title">
+    <p class="header-text">My Contact Details</p>
+  </section>
+  <section class="contact-details-box">
+    <div class="contact-details-table">
+      <div><img class="contact-icons" src="./img/mail.svg" alt="MAIL:"> leo@thomax.com</div>
+      <div><img class="contact-icons" src="./img/phone.svg" alt="MAIL:"> 04 7757 681811</div>
+      <div><img class="contact-icons" src="./img/home.svg" alt="MAIL:"> Sydney, Australia.</div>
+    </div>
+  </section>
+    </main>
   </body>
 </html>
