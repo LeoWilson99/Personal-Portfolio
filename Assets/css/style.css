@@ -103,7 +103,7 @@ img, video {
 @media (min-width: 650px) {
 
     .header-name {
-        font-size: 7rem;
+        font-size: 5.5rem;
         letter-spacing: 0.07rem;
         text-transform: uppercase;
     }
@@ -115,17 +115,19 @@ img, video {
         text-transform: uppercase;
     }
 }
-@media (min-width: 950px) {
+
+@media (min-width: 365px) {
+
     .header-name {
-        font-size: 8rem;
-        letter-spacing: 0.5rem;
+        font-size: 2.5rem;
+        letter-spacing: 0.07rem;
         text-transform: uppercase;
     }
 
     .header-text {
-        font-size: 1.8rem;
-        margin-top: 5rem;
-        letter-spacing: 1rem;
+        font-size: 1.5rem;
+        margin-top: 2rem;
+        letter-spacing: 0.2rem;
         text-transform: uppercase;
     }
 }
